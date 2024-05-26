@@ -1,0 +1,17 @@
+- rpm -i telnet.rpm - Installs package. In this case telnet.rpm.
+
+- rpm -e telnet.rpm - Uninstalls package. In this case, telnet.rpm.
+
+- rpm -q telnet.rpm - Queries the database for details.
+
+- yum install ansible - Installs package and dependancies. (repository found at /etc/yum.repos.d)
+
+- yum remove ansible - Uninstalls package and dependancies.
+
+- yum repolist - Displays repository.
+
+- yum list - Lists installed packages
+
+- yum --showduplicates list ansible - Shows all versions installed of specified package.
+
+- yum install ansible-2.4.2.0 - Specifies which version of package to install.

@@ -1,0 +1,15 @@
+- whoami - Tells you current user.
+
+- id - provides more details on the user such as userid groupid etc.
+
+- su bob - Switch to another user. In this case, Bob.
+
+- ssh bob@192.168.1.2 - Allows you to access a different Linux server
+
+- sudo - Allows you to make privilaged commands. Must be added to the sudoers file by the root user (/etc/sudoers).
+
+- curl http://....txt -O - Allows you to download files from internet.
+
+- wget http://....txt -O some-file.txt - Allows you to download files from the internet.
+
+- cat /etc/*release* - Check OS

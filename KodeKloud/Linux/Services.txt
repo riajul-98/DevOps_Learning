@@ -1,0 +1,31 @@
+- systemctl start ansible - Starts a service.
+
+- systemctl enable ansible - Enables service to run on restart
+
+- systemctl stop ansible - Stops a service.
+
+- systemctl disable ansible - Stops service at bootup
+
+- systemctl status ansible - Checks status of the service
+
+- To configure your own app (my_app.py) as a service:
+    - /etc/systemd/system/my_app.service
+    - 
+      [Unit]
+      Description = My python web application
+
+      [Service]
+      ExecStart = /usr/bin/python3 /opt/code/my_app.py (configures app as service)
+      ExecStartPre = /opt/code/configure_db.sh (Pre-install script)
+      ExecStartPost = /opt/code/email_status.sh (Post-Install script)
+      Restart = always (Specify whether you want app to restart if it crashes)
+      
+      [Install]
+      WantedBy = multi-user.target (Enables app at startup)
+
+
+    - systemctl daemon-reload
+    - systemctl start my-app
+    - systemctl enable my-app
+
+
