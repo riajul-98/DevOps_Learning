@@ -1,0 +1,29 @@
+- echo Hi - echo is used to print a line of text. In this example,"Hi".
+
+- ls - Lists all the content in a directory.
+
+- cd my_dir - cd is used to change directorys. In this example, you will be going into the my_dir directory.
+
+- pwd - Tells you the current directory
+
+- mkdir new_directory - Creates a new folder named new_directory.
+
+- cd new_directory; mkdir www; pwd - You can make multiple commands in one line by separating them out with semi-colons.
+
+- mkdir -p /tmp/asia/india/bangalore - '-p' allows you to create directories within directories, even if one of the previous directories in the path do not exist.
+
+- rm -r /tmp/my_dir1 - Removes directory and its content.
+
+- cp -r my_dir1 /tmp/my_dir1 - Copies directory and its content to another location.
+
+- touch new_file.txt - Creates a new empty file with name new_file.txt.
+
+- cat > new_file.txt - Adds content to file. Press ctrl+D to exit the prompt.
+
+- cat new_file.txt - View file contents.
+
+- cp new_file.txt copyfile.txt - Copies file.
+
+- mv new_file.txt sample.txt - Moves / Renames file.
+
+- rm new_file.txt - Removes file.
