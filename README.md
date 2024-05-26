@@ -17,6 +17,7 @@ Throughout the courses mentioned above, there are a handful of tools involved. T
 
 ## Installation and Setup
 You can get started by cloning this repository. Open your CLI, navigate to the folder you wish to clone this into and paste the following command;
+
 git clone https://github.com/riajul-98/DevOps_Learning.git
 
 ## Contributions
