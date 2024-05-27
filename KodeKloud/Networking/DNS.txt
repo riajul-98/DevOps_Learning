@@ -1,0 +1,23 @@
+- ping db - Pings db server without the need for ip address. You would need to specify name and ip address in the /etc/hosts file.
+
+- /etc/resolv.conf - Add 'nameserver' and IP address of the DNS server to point host to DNS server.
+
+- If IP address is specified in both files, /etc/hosts has priority. You can change priority by changing the 'hosts' field in the /etc/nsswitch.conf file.
+
+- Can forward any unknown IP addresses to public name servers on the internet by adding the name servers IP address to the DNS server e.g. Forward All to 8.8.8.8
+
+- Top-Level Domains - Last part of the domain name. (.com, .org, .net etc)
+
+- Subdomain - The start of the domain (www, maps, drive, apps, mail)
+
+- If you want to use web or hr in your command rather than web.mycompany.com or hr.mycompany.com, you would add a field in /etc/resolv.conf with 'search' and 'mycompany.com'.
+
+- A records - Map IPv4 to hostnames
+
+- AAAA records - Map IPv6 to hostnames
+
+- CNAME records - Mapping one name to another
+
+- nslookup www.google.com - Queries name server
+
+- dig www.google.com - DNS query

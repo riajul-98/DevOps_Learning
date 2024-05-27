@@ -1,0 +1,15 @@
+- To connect two devices together, you use a switch to create a network between the two devices.
+
+- ip link - Displays the interfaces for the host.
+
+- ip addr add 192.168.1.10/24 dev eth0 - Assigns IP address to the device.
+
+- To connect two different networks, use a router.
+
+- route - displays kernel IP route table.
+
+- ip route add 192.168.2.0 via 192.168.1.1 - Allows network 1 to communicate with network 2 via the router IP address.
+
+- ip route add 0.0.0.0 via 192.168.1.1 - Allows communication from the internet.
+
+- /proc/sys/net/ipv4/ip_forward - Contains setting which allows/declines packet forwarding. To allow this setting to persist after reboots, edit net.ipv4.ip_forward setting in the /etc/sysctl.conf file.
