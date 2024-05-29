@@ -1,0 +1,9 @@
+Remote repositories allow for all members in the team to push and merge their work. Git is smart enough to merge changes together.
+
+- git remote add <name> <url> - Notifies your system of which remote repository to add files to.
+
+- git pull - Pulls most up to date changes.
+
+- git push <name> <branch> - Pushes changes made to the remote repository.
+
+- git clone https://github..... - Clones repository onto local system.

@@ -1,0 +1,10 @@
+- Git allows you to collaborate with other developers and store code / track changes to code in a central repository.
+
+- To initialise a local directory as a git repository, you would use the 'git init' command.
+
+- git status - Provides a list of untracked files.
+
+- git add main.py - Adds main.py to staging.
+
+- git commit -m 'Added files' - Commits changes to the repository.
+
